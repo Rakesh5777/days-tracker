@@ -10,7 +10,7 @@
 
 .overlay {
   animation: fadeIn 0.5s;
-  max-width: 60%;
+  max-width: 75%;
   max-height: 80%;
   background-color: #ffffffc4;
   backdrop-filter: blur(20px);
