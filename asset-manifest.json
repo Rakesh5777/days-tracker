@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/days-tracker/static/css/main.79da2914.css",
+    "main.css": "/days-tracker/static/css/main.133c62ce.css",
     "main.js": "/days-tracker/static/js/main.af1ad1f3.js",
     "static/js/787.d698af0d.chunk.js": "/days-tracker/static/js/787.d698af0d.chunk.js",
     "index.html": "/days-tracker/index.html",
-    "main.79da2914.css.map": "/days-tracker/static/css/main.79da2914.css.map",
+    "main.133c62ce.css.map": "/days-tracker/static/css/main.133c62ce.css.map",
     "main.af1ad1f3.js.map": "/days-tracker/static/js/main.af1ad1f3.js.map",
     "787.d698af0d.chunk.js.map": "/days-tracker/static/js/787.d698af0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79da2914.css",
+    "static/css/main.133c62ce.css",
     "static/js/main.af1ad1f3.js"
   ]
 }
