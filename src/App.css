@@ -1,38 +1,106 @@
-.App {
+.content {
+  position: relative;
+  height: 100vh !important;
+  width: 100vw !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.overlay {
+  animation: fadeIn 0.5s;
+  max-width: 60%;
+  max-height: 80%;
+  background-color: #ffffffc4;
+  backdrop-filter: blur(20px);
+  z-index: 1;
+  border-radius: 10px;
+  padding: 1rem 10rem;
+  text-align: center;
+  font-size: x-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: all 0.2s ease-in;
+}
+
+.overlay:hover {
+  background-color: #ffffffcc;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.overlay div {
+  padding: 10px;
+}
+
+.text-align {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+li {
+  display: inline-block;
+  font-size: 1rem;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.font-style {
+  letter-spacing: 0.125rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1250px) {
+  .overlay {
+    padding: 1rem 5rem;
+    font-size: 1rem;
+  }
+
+  li {
+    font-size: 0.9rem;
+  }
+
+  li span {
+    font-size: 2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .overlay {
+    padding: 1rem 3rem;
+    font-size: 0.7rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  li {
+    padding: 1em 2em;
+    font-size: 0.7rem;
+  }
+
+  li span {
+    font-size: 1.5rem;
   }
 }
