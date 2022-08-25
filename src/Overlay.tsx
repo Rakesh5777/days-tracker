@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function Overlay1() {
-  const impDate = new Date(2022, 2, 10);
+  const impDate = new Date(2000, 2, 7);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -32,10 +32,12 @@ function Overlay1() {
       {days && (
         <div className="content">
           <div className="overlay">
-            <div className="font-style"> SANDHIYA MANIKANNAN</div>
-            <div className="font-style uppercase">all started at</div>
-            <div className="date font-style">10th MARCH 2022</div>
-            <div className="been font-style">ITS BEEN</div>
+            <div className="font-style"> SANDHIYA VASUDEVAN</div>
+            <div className="font-style uppercase">
+              A Jaunty Person :) born on
+            </div>
+            <div className="date font-style">7th MARCH 2000</div>
+            <div className="been font-style">Its Been</div>
             <ul>
               <li>
                 <span id="days">{days}</span>days
